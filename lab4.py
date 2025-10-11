@@ -1,5 +1,6 @@
 import math
 import time
+History = []
 def func_1():
     number_1 = float(input("Nhập số thứ nhất: "))
     number_2 = float(input("Nhập số thứ hai: "))
@@ -99,6 +100,13 @@ def func_7():
             print("x1 =", Nghiem_1)
             print("x2 =", Nghiem_2)
             
+def func_8():
+    if not History:
+        print("Chưa có lịch sử")
+    else:
+        print("Lịch sử chức năng đã dùng")
+        for i, func_name in enumerate (History, 1):
+            print(f"{i}.{func_name}")
 
             
 def func_9():
